@@ -36,8 +36,8 @@ public class OperationsWithFilesTests {
         $("[type=file]").uploadFromClasspath("hello.txt");
         File pdfConverted = $(".btn-wrapper.download-btn").download();
         PDF parsedPdf = new PDF(pdfConverted);
-        String hasText = parsedPdf.text;
-        assertTrue(hasText.contains(fileText), "Актуальное значение не соответсвует ожидаемому");
+        String actualText = parsedPdf.text;
+        assertTrue(actualText.contains(fileText), "Актуальное значение не соответсвует ожидаемому");
     }
 
     @DisplayName("Сверка значения ячейки XLS файла распакованного из ZIP архива с сайта Antrek")
