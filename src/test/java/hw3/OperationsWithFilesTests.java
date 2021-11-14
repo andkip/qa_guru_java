@@ -28,7 +28,7 @@ public class OperationsWithFilesTests {
 
     @DisplayName("Проверка значения в txt файле, далее конвертация в pdf на сайте и проверка что наше значение есть в pdf файле")
     @Test
-    public void uploadTXTCovertToPDFCheckValueTest() throws IOException {
+    public void uploadTXTConvertToPDFCheckValueTest() throws IOException {
         String fileText = "hello";
         String everything = IOUtils.toString(new FileReader("src/test/resources/hello.txt"));
         assertTrue(everything.contains(fileText));
